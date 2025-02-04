@@ -1,8 +1,9 @@
-import { useState } from 'react';
+
 import './App.css';
 import DarkModeToggle from './Theme/theme';
 import { TrData } from './Data/Data';
 import HeroSection from './HeroSection/heroSection';
+import Skills from './Skills/Skills';
 
 function App() {
   const { socials } = TrData.heroSection;
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <HeroSection />
+      <Skills/>
       <DarkModeToggle />
     </>
   );
