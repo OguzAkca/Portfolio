@@ -32,9 +32,10 @@ function App() {
     <> 
      <ThemeProvider>
         <div>
+        <DarkModeToggle />
           <HeroSection/>
           
-          <DarkModeToggle />
+          
           <h1 className="text-purple-600">Hoş Geldiniz!</h1>
           <ToastContainer />
           
