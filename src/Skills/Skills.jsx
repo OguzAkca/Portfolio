@@ -1,6 +1,7 @@
 
 import { TrData } from '../Data/Data';
 import React from 'react'
+import './Skills.css'
 
 function Skills() {
     const { title, skills, names } = TrData.skillsSection;
@@ -19,7 +20,7 @@ function Skills() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={skill.icon} alt={skill.name} width={30} />
+            <img className='icons' src={skill.icon} alt={skill.name}  />
           </a>
         ))}
 

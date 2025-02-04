@@ -9,8 +9,13 @@ function App() {
   const { socials } = TrData.heroSection;
 
   return (
-    <>
+    <><header>
+      
+    </header>
+      <body>
       <HeroSection />
+      <Skills/>
+      </body>
       <Skills/>
       <DarkModeToggle />
     </>

@@ -47,7 +47,8 @@ export const TrData = {
         name: 'FIGMA',
         icon: '/public/Icons/figma-icon.png'
       }
-    ]
+    ],
+    names: ['JavaScript', 'React', 'Redux', 'Node Js', 'Vs Code', 'Figma']
 
   },
   profileSection : 
