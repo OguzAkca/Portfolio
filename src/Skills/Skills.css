@@ -5,6 +5,8 @@
     margin: 10px;
 }
 .names {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
     font-size: 0.9rem;
     margin: 10px;
     gap: 10px;
