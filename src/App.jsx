@@ -32,7 +32,7 @@ function App() {
     <> 
      <ThemeProvider>
         <div>
-        <DarkModeToggle />
+      
           <HeroSection/>
           
           
