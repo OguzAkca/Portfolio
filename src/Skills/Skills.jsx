@@ -1,7 +1,7 @@
 
 import { TrData } from '../Data/Data';
 import React from 'react'
-import './Skills.css'
+
 
 function Skills() {
     const { title, skills, names } = TrData.skillsSection;
@@ -10,22 +10,19 @@ function Skills() {
 
 
   return (
-    <section className="skills-part">
-        <h1 className="baslik">{title}</h1>
-        <div className="programlar">
+    <section>
+      <h2 className="text-3xl font-bold">{title}</h2>
+      <div className="mt-6 flex flex-wrap justify-center gap-6">
+      <ul>
         {skills.map((skill, index) => (
-          <a
-            key={index}
-            
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className='icons' src={skill.icon} alt={skill.name}  />
-          </a>
+          <li key={index} className="flex flex-col items-center space-y-2">
+            <img src={skill.icon} alt={skill.name} className="w-16 h-16" />
+            <span className="text-lg">{skill.name}</span>
+          </li>
         ))}
-
-        </div>
-        <div className="names">{names}</div>
+      </ul>
+      </div>
+      
     </section>
   )
 }

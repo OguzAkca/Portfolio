@@ -3,10 +3,10 @@ import React, { createContext, useState, useEffect } from "react";
 export const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  // Kullanıcının varsayılan tema tercihini al
+  
   const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  // LocalStorage'dan ya da varsayılan ayardan temayı belirle
+  
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const storedTheme = localStorage.getItem("darkMode");
     if (storedTheme) {
@@ -15,7 +15,7 @@ export function ThemeProvider({ children }) {
     return prefersDarkMode;
   });
 
-  // Tema değiştiğinde body class'ını güncelle
+  
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add("dark-mode");

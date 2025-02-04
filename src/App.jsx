@@ -8,8 +8,12 @@ import "tailwindcss";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from 'react';
+import Skills from './Skills/Skills';
+import ProfileSection from './Profil/Profil';
+import ProjectsSection from './Projects/Projects';
 
 function App() {
+  
   const { socials } = TrData.heroSection;
   useEffect(() => {
     
@@ -28,10 +32,12 @@ function App() {
     <> 
      <ThemeProvider>
         <div>
+          <HeroSection/>
+          
           <DarkModeToggle />
           <h1 className="text-purple-600">Hoş Geldiniz!</h1>
           <ToastContainer />
-
+          
         </div>
     </ThemeProvider>
       

@@ -1,43 +1,25 @@
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-   
-    background-color: #1e1e1e; /* Arka plan rengini kendi tasarımına göre ayarla */
-    color: white;
-    padding: 20px;
-    margin-left: 30%;
-    margin-right: 30%;
-  }
-  
-  .header {
-    width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     
-    margin-bottom: 40px; /* Başlık ile içerik arasında boşluk bırakır */
-  }
-  
-  .baslik {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 0; /* Sayfanın başında olmasını sağlar */
-  }
-  
-  .part {
+}
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-color: purple;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+.hero-part {
+    padding: 10px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px; /* Resim ve yazı arasında boşluk bırakır */
-    max-width: 800px;
-  }
-  
-  .intro {
-    font-size: 1.2rem;
-    max-width: 400px;
-  }
-  
-  .foto {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-  }
-  
+}
+
+.greeting {
+    padding: 0px;
+    text-align: left;
+}
