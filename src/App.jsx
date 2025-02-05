@@ -31,12 +31,17 @@ function App() {
   return (
     <> 
      <ThemeProvider>
-        <div>
+
       
+        <div>
+          
           <HeroSection/>
+          <Skills/>
+          <ProfileSection/>
+          <ProjectsSection/>
           
           
-          <h1 className="text-purple-600">Hoş Geldiniz!</h1>
+          
           <ToastContainer />
           
         </div>

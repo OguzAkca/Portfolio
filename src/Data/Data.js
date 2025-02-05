@@ -1,9 +1,9 @@
 export const TrData = {
   heroSection: 
   {
-    greeting: 'Merhaba!',
+    greeting: 'Oğuz',
     intro:
-      'Ben Oğuz. Mesleğim FullStack Developer. Sağlam ve kaliteli ürünler tasarlayabilirim. Haydi Tanışalım!',
+      ' Mesleğim FullStack Developer. Sağlam ve kaliteli ürünler tasarlayabilirim. Haydi Tanışalım!',
     profilImg: '/public/myImg/myImg.jpeg',
     socials: [
       {
