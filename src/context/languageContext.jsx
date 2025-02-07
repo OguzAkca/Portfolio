@@ -1,16 +1,16 @@
 import React, { createContext, useState, useContext } from 'react';
 
-// Dil Context'ini oluşturuyoruz
+
 const LanguageContext = createContext();
 
-// useLanguage hook'u
+
 export const useLanguage = () => {
   return useContext(LanguageContext);
 };
 
-// LanguageProvider bileşeni
+
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en'); // Varsayılan dil İngilizce
+  const [language, setLanguage] = useState('en'); 
 
   const toggleLanguage = () => {
     setLanguage((prevLang) => (prevLang === 'tr' ? 'en' : 'tr'));
