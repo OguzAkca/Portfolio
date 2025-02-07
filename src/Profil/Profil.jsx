@@ -1,36 +1,56 @@
 import React from 'react';
 import { TrData } from '../Data/Data';
+import './Profil.css';  // CSS dosyasını import ettik
 
+export default function ProfileSection() {
+  const { title, basicInfo, hakkimda, ortaResim } = TrData.profileSection;
 
-export default function ProfileSection () {
-    const { title, basicInfo, hakkimda } = TrData.profileSection;
-  
-    return (
-      <section className="bg-[#4731D3] text-white py-12 px-6 md:px-20 relative top- left-0 w-full  h-120 flex flex-col md:flex-row justify-between items-center">
-        
-        <div>
-        <h2 className="text-3xl font-bold">{title}</h2>
-          {basicInfo.map((info, index) => (
-            <div className='infos' key={index}>
-              <h3 className="info-baslik mt-4">{info.baslik}</h3>
-              <ul className="mt-2 space-y-2">
-                 <li>📅 Date of Birth: {info.dogumTarihi}</li>
-                 <li>📍 Location: {info.ikamet}</li>
-                 <li>🎓 Education: {info.egitim}</li>
-                 <li>🖥 {info.rol}</li>
-             </ul>
-             
-            </div>
-          ))}
-          {hakkimda.map((hakkimdaItem, index) => (
-            <div key={index}>
-              <h3>{hakkimdaItem.baslik}</h3>
-              <p>{hakkimdaItem.metinBir}</p>
-              <p>{hakkimdaItem.metinIki}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-    );
-  };
+  return (
+    <section className="profile-section">
+      {/* Sol Kısım: Profil Bilgileri */}
+      <div className="profile-info">
+        <h2 className="profile-title">{title}</h2>
+        {basicInfo.map((info, index) => (
+          <div className="info-container" key={index}>
+            <h3 className="info-title">{info.baslik}</h3>
+            <ul className="info-list">
+  <li>
+    <p className="details"><strong>Doğum tarihi:</strong></p> 
+    <span className="detail-value">{info.dogumTarihi}</span>
+  </li>
+  <li>
+    <p className="details"><strong>İkamet Şehri:</strong></p>  
+    <span className="detail-value">{info.ikamet}</span>
+  </li>
+  <li>
+    <p className="details"><strong>Eğitim Durumu:</strong></p>  
+    <span className="detail-value">{info.egitim}</span>
+  </li>
+  <li>
+    <p className="details"><strong>Tercih Ettiği Rol:</strong></p>  
+    <span className="detail-value">{info.rol}</span>
+  </li>
+</ul>
 
+          </div>
+        ))}
+      </div>
+
+      {/* Orta Kısım: Fotoğraf */}
+      <div className="profile-image-container">
+        <img src={ortaResim} alt="Profile" className="profile-image" />
+      </div>
+
+      {/* Sağ Kısım: Hakkımda */}
+      <div className="profile-about">
+        {hakkimda.map((hakkimdaItem, index) => (
+          <div key={index}>
+            <h3 className="about-title">{hakkimdaItem.baslik}</h3>
+            <p className="about-text">{hakkimdaItem.metinBir}</p>
+            <p className="about-text">{hakkimdaItem.metinIki}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}

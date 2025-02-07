@@ -65,6 +65,7 @@ export const TrData = {
       rol : 'Frontend, UI',
       }
     ],
+    ortaResim: '/public/MiddleImg/orta-resim.png',
     hakkimda : 
     [
       {
