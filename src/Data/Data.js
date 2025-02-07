@@ -2,18 +2,17 @@ export const TrData = {
   heroSection: 
   {
     greeting: 'Oğuz',
-    intro:
-      ' Mesleğim Önyüz Tasarımcısı...',
+    intro:' Mesleğim Önyüz Tasarımcısı...',
     altText : ' ...sağlam ve kaliteli ürünler tasarlayabilirim. Haydi Tanışalım!',
-    profilImg: '/public/myImg/myImg.jpeg',
+    profilImg: '/myImg/myImg.jpeg',
     socials: [
       {
-        logo: '/public/Logos/linkedn.logo.png',
+        logo: '/Logos/linkedn.logo.png',
         alt_text: 'linkedIn',
         link: 'https://www.linkedin.com/in/o%C4%9Fuz-akca/',
       },
       {
-        logo: '/public/Logos/GithubLogo.png',
+        logo: '/Logos/GithubLogo.png',
         alt_text: 'GitHub',
         link: 'https://github.com/OguzAkca',
       },
@@ -26,27 +25,27 @@ export const TrData = {
     [
       {
         name: 'JAVASCRIPT',
-        icon: '/public/Icons/js-icon.png'
+        icon: '/Icons/js-icon.png'
       },
       {
         name: 'REACT',
-        icon: '/public/Icons/react-icon.png'
+        icon: '/Icons/react-icon.png'
       },
       {
         name: 'REDUX',
-        icon: '/public/Icons/redux-icon.png'
+        icon: '/Icons/redux-icon.png'
       },
       {
         name: 'NODE',
-        icon: '/public/Icons/nodejs-icon.png'
+        icon: '/Icons/nodejs-icon.png'
       },
       {
         name: 'VS CODE',
-        icon: '/public/Icons/vscode-icon.png'
+        icon: '/Icons/vscode-icon.png'
       },
       {
         name: 'FIGMA',
-        icon: '/public/Icons/figma-icon.png'
+        icon: '/Icons/figma-icon.png'
       }
     ],
     names: ['JavaScript', 'React', 'Redux', 'Node Js', 'Vs Code', 'Figma']
@@ -70,7 +69,7 @@ export const TrData = {
       rol : 'Frontend, UI',
       }
     ],
-    ortaResim: '/public/MiddleImg/orta-resim.png',
+    ortaResim: '/MiddleImg/orta-resim.png',
     hakkimda : 
     [
       {
@@ -95,8 +94,8 @@ export const TrData = {
         siteler :[ {alt_text : "GitHub'ta göster", link: 'https://github.com/Workintech/fsweb-s8-challenge-pizza' },{alt_text : "Websitesine git", link: 'https://github.com/Workintech/fsweb-s8-challenge-pizza' }],
       }
     ],
-    proje1Img : './public/ProjectImg/projectImg.png',
-    proje2Img : './public/ProjectImg/proje2Img.png',
+    proje1Img : './ProjectImg/projectImg.png',
+    proje2Img : './ProjectImg/proje2Img.png',
    
     projeIki : [
       {
@@ -125,15 +124,15 @@ export const EnData = {
     intro:
       "I'm a frontend developer...",
     altText : ' ...who likes to craft solid and scalable frontend products with great user experiences.',
-    profilImg: '/public/myImg/myImg.jpeg',
+    profilImg: '/myImg/myImg.jpeg',
     socials: [
       {
-        logo: '/public/Logos/linkedn.logo.png',
+        logo: '/Logos/linkedn.logo.png',
         alt_text: 'linkedIn',
         link: 'https://www.linkedin.com/in/o%C4%9Fuz-akca/',
       },
       {
-        logo: '/public/Logos/GithubLogo.png',
+        logo: '/Logos/GithubLogo.png',
         alt_text: 'GitHub',
         link: 'https://github.com/OguzAkca',
       },
@@ -146,27 +145,27 @@ export const EnData = {
     [
       {
         name: 'JAVASCRIPT',
-        icon: '/public/Icons/js-icon.png'
+        icon: '/Icons/js-icon.png'
       },
       {
         name: 'REACT',
-        icon: '/public/Icons/react-icon.png'
+        icon: '/Icons/react-icon.png'
       },
       {
         name: 'REDUX',
-        icon: '/public/Icons/redux-icon.png'
+        icon: '/Icons/redux-icon.png'
       },
       {
         name: 'NODE',
-        icon: '/public/Icons/nodejs-icon.png'
+        icon: '/Icons/nodejs-icon.png'
       },
       {
         name: 'VS CODE',
-        icon: '/public/Icons/vscode-icon.png'
+        icon: '/Icons/vscode-icon.png'
       },
       {
         name: 'FIGMA',
-        icon: '/public/Icons/figma-icon.png'
+        icon: '/Icons/figma-icon.png'
       }
     ],
     names: ['JavaScript', 'React', 'Redux', 'Node Js', 'Vs Code', 'Figma']
@@ -189,7 +188,7 @@ export const EnData = {
       rol : 'Frontend, UI',
       }
     ],
-    ortaResim: '/public/MiddleImg/orta-resim.png',
+    ortaResim: '/MiddleImg/orta-resim.png',
     hakkimda : 
     [
       {
@@ -214,8 +213,8 @@ export const EnData = {
         siteler :[ {alt_text : "View on GitHub", link: 'https://github.com/Workintech/fsweb-s8-challenge-pizza' },{alt_text : "Go to webside", link: 'https://github.com/Workintech/fsweb-s8-challenge-pizza' }],
       }
     ],
-    proje1Img : './public/ProjectImg/projectImg.png',
-    proje2Img : './public/ProjectImg/proje2Img.png',
+    proje1Img : './ProjectImg/projectImg.png',
+    proje2Img : './ProjectImg/proje2Img.png',
    
     projeIki : [
       {

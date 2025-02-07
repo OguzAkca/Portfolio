@@ -15,7 +15,7 @@ export default function HeroSection() {
   
 
   return (
-    <section className="bg-[linear-gradient(to_right,#4731D3_70%,#CBF281_30%)] relative top-0 left-0 w-full h-120 text-white py-12 px-6 md:px-20 flex flex-col md:flex-row  items-center">
+    <section className="bg-[linear-gradient(to_right,#4731D3_70%,#CBF281_30%)] max-w-10px relative top-0 left-0 w-full h-120 text-white py-12 px-6 md:px-20 flex flex-col md:flex-row  items-center">
       <div className="absolute left-[76%] -translate-x-1/2 top-3">
       
         <DarkModeToggle />
