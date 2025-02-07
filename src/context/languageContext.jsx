@@ -1,21 +1,24 @@
-import { createContext, useState } from "react";
+import React, { createContext, useState, useContext } from 'react';
 
-export const LanguageContext = createContext()
+// Dil Context'ini oluşturuyoruz
+const LanguageContext = createContext();
 
-import React from 'react'
+// useLanguage hook'u
+export const useLanguage = () => {
+  return useContext(LanguageContext);
+};
 
-function LanguageProvider({children}) {
+// LanguageProvider bileşeni
+export const LanguageProvider = ({ children }) => {
+  const [language, setLanguage] = useState('en'); // Varsayılan dil İngilizce
 
-    const [language, setLanguage] = useState('tr');
-    const changeLanguage = (lan) => {
-        setLanguage(lan)
-    }
+  const toggleLanguage = () => {
+    setLanguage((prevLang) => (prevLang === 'tr' ? 'en' : 'tr'));
+  };
 
   return (
-    <LanguageContext.Provider value={{ language , changeLanguage}}>
-        {children}
+    <LanguageContext.Provider value={{ language, toggleLanguage }}>
+      {children}
     </LanguageContext.Provider>
-  )
-}
-
-export default languageContext
+  );
+};

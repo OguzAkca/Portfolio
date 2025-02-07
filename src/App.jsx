@@ -12,6 +12,8 @@ import Skills from './Skills/Skills';
 import ProfileSection from './Profil/Profil';
 import ProjectsSection from './Projects/Projects';
 import Footer from './Footer/Footer';
+import { LanguageProvider } from './context/languageContext';
+import Language from './Language/Language';
 
 function App() {
   
@@ -32,10 +34,11 @@ function App() {
   return (
     <> 
      <ThemeProvider>
+      <LanguageProvider>
 
       
         <div>
-          
+          <Language/>
           <HeroSection/>
           <Skills/>
           <ProfileSection/>
@@ -47,6 +50,7 @@ function App() {
           <ToastContainer />
           
         </div>
+      </LanguageProvider>
     </ThemeProvider>
       
     </>

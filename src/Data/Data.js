@@ -194,13 +194,13 @@ export const EnData = {
   {
     projeBir : [
       {
-        baslik: 'Pizza Sipariş Sitesi',
-        metin : 'Tamamı benim tarafımdan tasarlanmış online sipariş için tasarlanmış bir websitesi. ',
+        baslik: 'Pizza order webside',
+        metin : 'A website designed entirely by me for online ordering. ',
         react : 'React',
         node : 'Node Js',
         vercel : 'Vercel',
         
-        siteler :[ {alt_text : "GitHub'ta göster", link: 'https://github.com/Workintech/fsweb-s8-challenge-pizza' },{alt_text : "Websitesine git", link: 'https://github.com/Workintech/fsweb-s8-challenge-pizza' }],
+        siteler :[ {alt_text : "View on GitHub", link: 'https://github.com/Workintech/fsweb-s8-challenge-pizza' },{alt_text : "Go to webside", link: 'https://github.com/Workintech/fsweb-s8-challenge-pizza' }],
       }
     ],
     proje1Img : './public/ProjectImg/projectImg.png',
@@ -208,20 +208,20 @@ export const EnData = {
    
     projeIki : [
       {
-        baslik: 'Günlük',
-        metin : 'Gün içinde aklınıza gelen notları kaydedip daha sonrasında hatırlamanızı sağlayacak bir web sitesi',
+        baslik: 'Diary',
+        metin : 'A website that allows you to save notes that come to mind during the day and recall them later.',
         react : 'React',
         redux : 'Redux',
         router : 'Router',
         node : 'Node Js',
-        siteler :[ {alt_text : "GitHub'ta göster", link: 'https://github.com/OguzAkca/Sukran-Gunlugu' },{alt_text : "Websitesine git", link: 'https://github.com/OguzAkca/Sukran-Gunlugu' }],
+        siteler :[ {alt_text : "View on GitHub", link: 'https://github.com/OguzAkca/Sukran-Gunlugu' },{alt_text : "Go to webside", link: 'https://github.com/OguzAkca/Sukran-Gunlugu' }],
       }
     ],
    
   },
   footerSection : {
-    title: 'Bana bir mesaj gönder!',
-    message: "Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Buyurun.",
+    title: 'Send me a message!',
+    message: "Got a question or proposal, or just want to say hello? Go ahead.",
     gmail: 'oguzakca96@gmail.com'
   }
 };
