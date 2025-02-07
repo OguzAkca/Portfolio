@@ -53,27 +53,27 @@
 }
 
 .btns:hover {
-    background-color: #CBF281; /* hover:bg-purple-600 */
-    color: white; /* hover:text-white */
-    border: 2px solid transparent; /* hover:border-transparent */
+    background-color: #CBF281; 
+    color: white; 
+    border: 2px solid transparent; 
 }
 
 .btns:active {
-    background-color: #4731D3; /* active:bg-purple-700 */
+    background-color: #4731D3; 
 }
 .social-item {
     display: flex;
     left: 3px;
     color: #4731D3;
     
-    align-items: center; /* Dikeyde ortalama */
-    gap: 2px; /* Resim ile yazı arasına boşluk */
+    align-items: center; 
+    gap: 2px; 
 }
 
 .profil-img{
     position: relative;
-    width: 18rem; /* w-36 = 9rem = 144px */
-    height: 18rem; /* h-36 = 9rem = 144px */
+    width: 18rem; 
+    height: 18rem; 
     border-radius: 6px; 
     margin-top: 10px;
     
@@ -82,4 +82,67 @@
 
 .yazilar {
     margin-left: 170px;
+}
+
+@media (max-width: 768px) {
+    .h-greeting {
+        font-size: 1.5rem; 
+        top: -40px; 
+    }
+
+    .h-intro {
+        font-size: 2rem; 
+        top: -10px;
+        line-height: normal;
+    }
+
+    .btns {
+        width: 120px;
+        height: 50px;
+        font-size: 14px; 
+    }
+
+    .profil-img {
+        width: 12rem; 
+        height: 12rem;
+        right: 0; 
+        margin: 0 auto; 
+        display: block;
+    }
+
+    .yazilar {
+        margin-left: 20px; 
+        margin-right: 20px;
+    }
+
+    .social-item {
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .h-greeting {
+        font-size: 1.2rem;
+        top: -30px;
+    }
+
+    .h-intro {
+        font-size: 1.5rem;
+        top: 0;
+    }
+
+    .btns {
+        width: 100px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .profil-img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .yazilar {
+        margin: 10px; 
+    }
 }

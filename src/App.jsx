@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import Skills from './Skills/Skills';
 import ProfileSection from './Profil/Profil';
 import ProjectsSection from './Projects/Projects';
+import Footer from './Footer/Footer';
 
 function App() {
   
@@ -39,6 +40,7 @@ function App() {
           <Skills/>
           <ProfileSection/>
           <ProjectsSection/>
+          <Footer/>
           
           
           

@@ -14,7 +14,7 @@ function Skills() {
     <section className='skills-section'>
     <h2 className="title">{title}</h2>
     <div className="grid">
-      <ul className="ul-class"> {/* YATAY hizalama için flex eklendi */}
+      <ul className="ul-class"> 
         {skills.map((skill, index) => (
           <li key={index} className="flex flex-col items-center space-y-2">
             <img src={skill.icon} alt={skill.name} className="w-16 h-16" />

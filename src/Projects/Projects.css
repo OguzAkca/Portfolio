@@ -1,0 +1,169 @@
+/* Projects.css */
+
+.projects-section {
+    background-color: #d4f88f; /* Light green background */
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #3a0ca3;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    left: 225px;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Kartların aynı yükseklikte olmasını sağlar */
+    width: 90%;
+    position: relative;
+    left: 4%;
+    gap: 16px;
+  }
+  
+  .project-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    
+  }
+
+  .links {
+    display: flex;
+    gap: 15px; /* Linkler arasında boşluk oluşturur */
+    justify-content: flex-start; /* Linkleri ortalar */
+    margin-top: 10px; /* Üstteki içerikle arasında boşluk bırakır */
+  }
+
+
+  .p1-yazilar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+  }
+  
+  .project-image {
+    width: 360px;
+    height: 360px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  .project2-image{
+    width: 360px;
+    height: 360px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  .project-title, .more-project-title {
+    font-size: 1.8rem;
+    color: #3a0ca3;
+    font-weight: bold;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    width: 70%;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .project-links, .project-detail {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .project-link {
+    background-color: #5a00d3;
+    color: white;
+    width: 75px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+  }
+ 
+  .project-link:hover, .project-site-link:hover {
+    background-color: #37007a;
+  }
+  
+  .more-project-card img {
+    width: 360px;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  
+  .project-site-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3a0ca3;
+    text-decoration: underline;
+  }
+  
+
+  @media (max-width: 1200px) {
+    .projects-container {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  
+    .project-card {
+      width: 48%; /* Geniş ekranlarda oranı korur */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-card {
+      width: 100%; /* Tabletlerde tam genişlik kaplar */
+      min-width: auto; /* Genişlik sınırını kaldırır */
+    }
+  
+    .project-image,
+    .project2-image {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 2rem;
+      left: 0; /* Mobilde ortalar */
+      text-align: center;
+    }
+  
+    .project-card {
+      flex-direction: column; /* Mobilde alt alta dizilir */
+      align-items: center;
+    }
+  
+    .project-image,
+    .project2-image {
+      width: 90%;
+      height: auto;
+      margin: 0 0 15px 0;
+    }
+  
+    .p1-yazilar {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .project-description {
+      width: 100%;
+    }
+  }

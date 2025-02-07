@@ -1,52 +1,64 @@
-import React from 'react'
+import React from 'react';
 import { TrData } from '../Data/Data';
+import './Projects.css';  
 
 export default function ProjectsSection() {
+  const { projeBir, projeIki, footerSection, proje1Img,proje2Img } = TrData.projectSection;
 
-
-    const { projeBir, projeIki, footerSection } = TrData.projectSection;
   return (
-    <section className="py-12 bg-green-200 text-center">
-      <h2 className="text-3xl font-bold" >Projeler</h2>
-      <div className="mt-6 space-y-6">
-      {projeBir.map((proje, index) => (
-        <div key={index} className="bg-white p-6 rounded-lg shadow-lg max-w-xl mx-auto">
-          <h3 className="text-2xl font-bold">{proje.baslik}</h3>
-          <p className="mt-2">{proje.metin}</p>
-          <div className="">
-          <a href={proje.react} className="bg-black text-white px-4 py-2 rounded-lg">{proje.react}</a>
-          
-          <a href={proje.node} className="bg-blue-600 text-white px-4 py-2 rounded-lg">{proje.node}</a>
-          
+    <section className="projects-section">
+      <h2 className="section-title">Projeler</h2>
+      <div className="projects-container">
+        {projeBir.map((proje, index) => (
+          <div key={index} className="project-card">
+            <img src={proje1Img} alt="" className="project-image" />
+            <div className="p1-yazilar">
+            <h3 className="project-title">{proje.baslik}</h3>
+            <p className="project-description">{proje.metin}</p>
+            <div className="project-links">
+              <a href={proje.react} className="project-link project-link-react">{proje.react}</a>
+              <a href={proje.node} className="project-link project-link-node">{proje.node}</a>
+              <a href={proje.vercel} className="project-link project-link-node">{proje.vercel}</a>
+            </div>
+            <div className="links">
+            {proje.siteler.map((site, idx) => (
+              <a key={idx} href={site.link} target="_blank" rel="noopener noreferrer" className="project-site-link">
+                {site.alt_text}
+              </a>
+            ))}
+            </div>
+            </div>
           </div>
-          {proje.siteler.map((site, idx) => (
-            <a key={idx} href={site.link} target="_blank" rel="noopener noreferrer">
-              {site.alt_text}
-            </a>
-          ))}
-        </div>
-      ))}
+        ))}
+        
       </div>
-      <div className=""></div>
-      {projeIki.map((proje, index) => (
-        <div key={index}>
-          <h3>{proje.baslik}</h3>
-          <p>{proje.metin}</p>
-          <p>{proje.react}</p>
-          <p>{proje.redux}</p>
-          <p>{proje.router}</p>
-          <p>{proje.node}</p>
-          {proje.siteler.map((site, idx) => (
-            <a key={idx} href={site.link} target="_blank" rel="noopener noreferrer">
-              {site.alt_text}
-            </a>
-          ))}
-        </div>
-      ))}
       
+
+      <div className="projects-container">
+        {projeIki.map((proje, index) => (
+          <div key={index} className="project-card">
+            <img src={proje2Img} alt="" className="project2-image" />
+            <div className="p1-yazilar">
+            <h3 className="project-title">{proje.baslik}</h3>
+            
+            <p className="project-description">{proje.metin}</p>
+            <div className="project-links">
+              <a href={proje.react} className="project-link project-link-react">{proje.react}</a>
+              <a href={proje.redux} className="project-link project-link-node">{proje.redux}</a>
+              <a href={proje.router} className="project-link project-link-node">{proje.router}</a>
+            </div>
+            <div className="links">
+            {proje.siteler.map((site, idx) => (
+              <a key={idx} href={site.link} target="_blank" rel="noopener noreferrer" className="project-site-link">
+                {site.alt_text}
+              </a>
+            ))}
+            </div>
+          </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
-};
-
-
+}
 
