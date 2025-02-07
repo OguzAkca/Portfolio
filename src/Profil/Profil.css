@@ -12,6 +12,10 @@
     align-items: center;
   }
   
+  
+
+ 
+  
   /* Ekran büyükse yatay hizalama */
   @media (min-width: 768px) {
     .profile-section {
@@ -41,6 +45,8 @@
   
   .info-container {
     margin-top: 1rem;
+    
+    
   }
   
   .info-title {
@@ -57,6 +63,11 @@
   
   .info-list li {
     margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;  /* Dikey hizalamayı sağlarız */
+      gap: 10px;  /* Aralarındaki boşluğu ayarlıyoruz */
+      margin-bottom: 0.5rem; /* Aralarındaki mesafeyi ayarlıyoruz */
+    
   }
   
   /* Orta Kısım - Fotoğraf */
@@ -73,13 +84,15 @@
   }
   
   .info-list li {
-    display: flex;  /* Yan yana dizmek için */
-    align-items: center;  /* Dikeyde hizalamak için */
-    gap: 8px; /* p ve span arasına boşluk bırakır */
+    display: flex;  
+    align-items: flex-start; 
+    gap: 8px; 
     margin-bottom: 8px;
+   
   }
   
   .details {
+    display: inline-flex;
     font-weight: bold;
     white-space: nowrap; /* Taşmasını engeller */
   }

@@ -38,7 +38,7 @@ function App() {
 
       
         <div>
-          <Language/>
+          
           <HeroSection/>
           <Skills/>
           <ProfileSection/>

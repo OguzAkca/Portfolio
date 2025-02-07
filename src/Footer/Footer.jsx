@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import { TrData } from '../Data/Data';
+import { EnData, TrData } from '../Data/Data';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Footer.css'
+import { useLanguage } from '../context/languageContext';
 
-const { title, message, gmail } = TrData.footerSection;
 
 function Footer() {
+  const { language } = useLanguage(); 
+  const data = language === 'tr' ? TrData : EnData; 
+const { title, message, gmail } = data.footerSection;
+
+
   const handleCopy = () => {
     navigator.clipboard.writeText(gmail)
       .then(() => {

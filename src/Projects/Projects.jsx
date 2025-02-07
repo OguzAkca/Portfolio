@@ -1,13 +1,16 @@
 import React from 'react';
-import { TrData } from '../Data/Data';
+import { EnData, TrData } from '../Data/Data';
 import './Projects.css';  
+import { useLanguage } from '../context/languageContext';
 
 export default function ProjectsSection() {
-  const { projeBir, projeIki, footerSection, proje1Img,proje2Img } = TrData.projectSection;
+  const { language } = useLanguage(); 
+    const data = language === 'tr' ? TrData : EnData; 
+  const { projeBir, projeIki, proje1Img, proje2Img, title } = data.projectSection;
 
   return (
     <section className="projects-section">
-      <h2 className="section-title">Projeler</h2>
+      <h2 className="section-title">{title}</h2>
       <div className="projects-container">
         {projeBir.map((proje, index) => (
           <div key={index} className="project-card">

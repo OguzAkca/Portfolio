@@ -4,11 +4,12 @@ import { TrData, EnData } from '../Data/Data'; // Türkçe ve İngilizce veriler
 import './heroSection.css';
 import DarkModeToggle from '../Theme/theme';
 import { useLanguage } from '../context/languageContext';
+import Language from '../Language/Language';
 
 
 export default function HeroSection() {
-  const { language } = useLanguage(); // dil bilgisini al
-  const data = language === 'tr' ? TrData : EnData; // dil seçimine göre veri seç
+  const { language } = useLanguage(); 
+  const data = language === 'tr' ? TrData : EnData; 
 
   const { greeting, intro, altText, profilImg, socials } = data.heroSection;
   
@@ -16,7 +17,11 @@ export default function HeroSection() {
   return (
     <section className="bg-[linear-gradient(to_right,#4731D3_70%,#CBF281_30%)] relative top-0 left-0 w-full h-120 text-white py-12 px-6 md:px-20 flex flex-col md:flex-row  items-center">
       <div className="absolute left-[76%] -translate-x-1/2 top-3">
+      
         <DarkModeToggle />
+      </div>
+      <div className="dil">
+      <Language/>
       </div>
       <div className="yazilar">
         <div className="text-center w-70/100 ml-[30%] text-left md:text-left top-3">

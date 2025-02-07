@@ -1,28 +1,24 @@
 import React from 'react';
 import { useLanguage } from '../context/languageContext';
 
-
 const Language = () => {
   const { language, toggleLanguage } = useLanguage();
 
   return (
-    <button 
+    <p 
       onClick={toggleLanguage}
-      style={buttonStyle}
+      style={textStyle}
     >
       {language === 'en' ? 'Switch to Turkish' : 'Switch to English'}
-    </button>
+    </p>
   );
 };
 
-const buttonStyle = {
-  backgroundColor: '#4731D3',
-  color: '#fff',
-  padding: '10px 20px',
-  border: 'none',
-  borderRadius: '5px',
+const textStyle = {
+  color: '#CBF281',
   cursor: 'pointer',
   fontSize: '16px',
+  textDecoration: 'underline', // Kullanıcıya tıklanabilir olduğunu göstermek için
 };
 
 export default Language;

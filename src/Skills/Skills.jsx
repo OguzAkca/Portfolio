@@ -1,11 +1,14 @@
 
-import { TrData } from '../Data/Data';
+import { EnData, TrData } from '../Data/Data';
 import React from 'react'
 import  './Skills.css'
+import { useLanguage } from '../context/languageContext';
 
 
 function Skills() {
-    const { title, skills, names } = TrData.skillsSection;
+  const { language } = useLanguage(); 
+      const data = language === 'tr' ? TrData : EnData; 
+    const { title, skills, names } = data.skillsSection;
 
 
 

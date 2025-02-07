@@ -55,8 +55,13 @@ export const TrData = {
   profileSection : 
   {
     title: 'Profil',
+    p1: 'Doğum Tarihi:' ,
+    p2: 'İkamet Şehri:',
+    p3: 'Eğitim Durumu:',
+    p4: 'Tercih Ettiği Rol:',
     basicInfo : 
     [
+      
       {
       baslik: 'Bilgilerim',
       dogumTarihi : '01.03.1996',
@@ -78,6 +83,7 @@ export const TrData = {
   },
   projectSection: 
   {
+    title : 'Projeler',
     projeBir : [
       {
         baslik: 'Pizza Sipariş Sitesi',
@@ -169,8 +175,12 @@ export const EnData = {
   profileSection : 
   {
     title: 'Profile',
+    p1: 'Birth Date:' ,
+    p2: 'Residance:',
+    p3: 'Education:',
+    p4: 'Preffered Role:',
     basicInfo : 
-    [
+    [ 
       {
       baslik: 'Information',
       dogumTarihi : '01.03.1996',
@@ -192,6 +202,7 @@ export const EnData = {
   },
   projectSection: 
   {
+    title : 'Projects',
     projeBir : [
       {
         baslik: 'Pizza order webside',

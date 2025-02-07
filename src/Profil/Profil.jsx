@@ -1,9 +1,12 @@
 import React from 'react';
-import { TrData } from '../Data/Data';
+import { EnData, TrData } from '../Data/Data';
 import './Profil.css';  // CSS dosyasını import ettik
+import { useLanguage } from '../context/languageContext';
 
 export default function ProfileSection() {
-  const { title, basicInfo, hakkimda, ortaResim } = TrData.profileSection;
+  const { language } = useLanguage(); 
+    const data = language === 'tr' ? TrData : EnData; 
+  const { title, basicInfo, hakkimda, ortaResim, p1, p2, p3, p4 } = data.profileSection;
 
   return (
     <section className="profile-section">
@@ -15,19 +18,19 @@ export default function ProfileSection() {
             <h3 className="info-title">{info.baslik}</h3>
             <ul className="info-list">
   <li>
-    <p className="details"><strong>Doğum tarihi:</strong></p> 
+    <p className="details"><strong>{p1}</strong></p> 
     <span className="detail-value">{info.dogumTarihi}</span>
   </li>
   <li>
-    <p className="details"><strong>İkamet Şehri:</strong></p>  
+    <p className="details"><strong>{p2}</strong></p>  
     <span className="detail-value">{info.ikamet}</span>
   </li>
   <li>
-    <p className="details"><strong>Eğitim Durumu:</strong></p>  
+    <p className="details"><strong>{p3}</strong></p>  
     <span className="detail-value">{info.egitim}</span>
   </li>
   <li>
-    <p className="details"><strong>Tercih Ettiği Rol:</strong></p>  
+    <p className="details"><strong>{p4}</strong></p>  
     <span className="detail-value">{info.rol}</span>
   </li>
 </ul>
