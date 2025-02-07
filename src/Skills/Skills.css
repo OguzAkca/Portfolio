@@ -1,0 +1,55 @@
+/* Genel düzenleme */
+.skills-section {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start; /* Başlığı sol hizalamak için */
+    justify-content: space-around;
+    min-height: 100%;
+    background-color: #FFFFFF;
+    
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5a35d6; /* Mor başlık rengi */
+    margin-right: 40px; /* İkonlarla boşluk bırakmak için */
+    align-self: flex-start; /* Başlığı yukarı hizala */
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ul-class {
+    display: grid;
+    position: relative;
+    left: -350px;
+    grid-template-columns: repeat(2, 1fr); /* İki sütunlu grid */
+    gap: 40px 150px; /* Satır ve sütunlar arası boşluk */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ul-class li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .ul-class img {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  }
+  
+  .span-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555; /* Koyu gri metin */
+  }
+  

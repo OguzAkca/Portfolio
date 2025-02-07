@@ -1,16 +1,16 @@
 import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "../context/themeContext";
-import { ToastContainer, toast } from 'react-toastify';
+
 import './theme.css';
 
 export default function DarkModeToggle() {
   const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
 
-  const notify = () => toast("Tema Değiştirildi");
+  
 
   const toggleTheme = () => {
     setIsDarkMode(prev => !prev);
-    notify();
+    
   };
 
   useEffect(() => {
@@ -37,7 +37,10 @@ export default function DarkModeToggle() {
         <p className="theme-text">{isDarkMode ? "Açık Tema" : "Koyu Tema"}</p>
       </div>
       
-      <ToastContainer />
+      
     </div>
   );
 }
+
+
+

@@ -3,7 +3,8 @@ export const TrData = {
   {
     greeting: 'Oğuz',
     intro:
-      ' Mesleğim FullStack Developer. Sağlam ve kaliteli ürünler tasarlayabilirim. Haydi Tanışalım!',
+      ' Mesleğim Önyüz Tasarımcısı...',
+    altText : ' ...sağlam ve kaliteli ürünler tasarlayabilirim. Haydi Tanışalım!',
     profilImg: '/public/myImg/myImg.jpeg',
     socials: [
       {

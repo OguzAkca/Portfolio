@@ -4,3 +4,82 @@
     box-sizing: border-box;
 }
 
+.all-items{
+    border: black;
+}
+
+
+.intronun {
+    position: relative;
+    top: 0px;
+    gap: 10px;
+    font-size: large;
+    
+}
+.basliklar{
+    gap: 10px;
+}
+.h-greeting{
+    position: relative;
+    text-decoration: solid;
+    top: -70px;
+    font-size: 2rem;
+    color: #CBF281;
+}
+.h-intro {
+    position: relative;
+    text-decoration: solid;
+    top: -17px;
+    font-size: 3rem;
+    color: #CBF281;
+    line-height: -100px;
+}
+
+.btns {
+    position: relative;
+    top: 5px;
+    background-color: white; 
+    border: 2px solid #E9D5FF; 
+    color: #4731D3; 
+    padding: 10px 16px; 
+    font-size: 16px;
+    font-weight: 600;
+    width: 140px;
+    height: 60px;
+    border-radius: 6px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.btns:hover {
+    background-color: #CBF281; /* hover:bg-purple-600 */
+    color: white; /* hover:text-white */
+    border: 2px solid transparent; /* hover:border-transparent */
+}
+
+.btns:active {
+    background-color: #4731D3; /* active:bg-purple-700 */
+}
+.social-item {
+    display: flex;
+    left: 3px;
+    color: #4731D3;
+    
+    align-items: center; /* Dikeyde ortalama */
+    gap: 2px; /* Resim ile yazı arasına boşluk */
+}
+
+.profil-img{
+    position: relative;
+    width: 18rem; /* w-36 = 9rem = 144px */
+    height: 18rem; /* h-36 = 9rem = 144px */
+    border-radius: 6px; 
+    margin-top: 10px;
+    
+    right: -90px;
+}
+
+.yazilar {
+    margin-left: 170px;
+}
